@@ -13,12 +13,12 @@
         <div class="mockup-phone border-primary">
             <div class="camera"></div>
             <div class="display">
-              <div class="artboard artboard-demo phone-1">
+              <div class="artboard artboard-demo phone-3">
                 <div>
                     <div class="stats shadow">
                         <div class="stat">
                           <div class="stat-title">Total Page Views</div>
-                          <div id="account-blance" class="stat-value">400</div>
+                          <div id="account-blance" class="stat-value">90000</div>
                           <div class="stat-desc"> available blance</div>
                         </div>
                       </div>
@@ -36,13 +36,13 @@
 
 <!-- add user money  -->
  <div>
-    <button class="btn btn-lg">Add money</button>
-    <button class="btn btn-lg">cash out</button>
+    <button id="show-add-money" class="btn btn-lg">Add money</button>
+    <button id="show-cash-out" class="btn btn-lg">cash out</button>
  </div>
  <div class="divider">
  </div>
  <!-- add money -->
- <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+ <div  id="add-money-form"  class="  card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
     <form class="card-body">
       <div class="form-control">
         <label class="label">
@@ -62,13 +62,35 @@
       </div>
     </form>
   </div>
-
-
+<!-- cash money start  -->
+<div  id="cash-out-form"  class=" hidden card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+  <form class="card-body">
+    <div class="form-control">
+      <label class="label">
+        <span class="label-text">amount</span>
+      </label>
+      <input id="cash-out-money" type="text" placeholder="cash out amount " class="input input-bordered" required />
+    </div>
+    <div class="form-control">
+      <label class="label">
+        <span class="label-text">pin</span>
+      </label>
+      <input id="cash-out-pin"  type="number" placeholder="enter your pin number" class="input input-bordered" autocomplete="off" required />
+      
+    </div>
+    <div class="form-control mt-6">
+      <button id="btn-cash-out" class="btn btn-primary">cash out </button>
+    </div>
+  </form>
+</div>
+<!-- cash money end -->
 
               </div>
             </div>
           </div>
     </main>
     <script src="/jero.js"></script>
+    <script src="/cashout.js"></script>
+    <script src="/features.js"></script>
 </body>
 </html>
