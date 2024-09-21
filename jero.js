@@ -14,4 +14,29 @@ document.getElementById('btn-add-money')
         const addPinNumber = document.getElementById('pin-number') .value;
         console.log(addPinNumber);
 
+        // step04;verify pin number 
+        if(addPinNumber === '1234'){
+            console.log('adding you money to your account ');
+
+// get the current blance step05
+
+const blance = document.getElementById('account-blance') .innerText;
+console.log(blance);
+
+// step5: add addMoneyinput with blance 
+
+// const newBlance = blance + addMoneyInput;
+const addMoneyNumber = parseFloat(addMoneyInput);
+const addBalance = parseFloat(blance);
+const newBalance = addMoneyNumber + addBalance;
+console.log(newBalance);
+
+// step06; update account blance 
+document.getElementById('account-blance').innerText = newBalance;
+
+        }
+        else{
+            alert('failed you account pin number ')
+        }
+
     });
